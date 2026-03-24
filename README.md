@@ -1,85 +1,113 @@
 # 🤖 AI-Powered Autonomous Interview & Surveillance System
 
+---
+
 ## 📌 Overview
 
-This project is a **semi industry-level AI system** that combines:
+This project is a **semi industry-level AI system** combining:
 
-* 🧠 **AI Interview Engine (NLP-based)**
-* 👁️ **Real-Time Surveillance System (Computer Vision)**
-* ⚙️ **Decision Intelligence Engine**
+* 🧠 AI Interview Engine (NLP)
+* 👁️ Real-Time Surveillance (Computer Vision)
+* ⚙️ Decision Intelligence Engine
 
-The system evaluates candidates using **multi-modal inputs (video, audio, text)** to generate:
+It evaluates candidates using **video + audio + text** to generate:
 
-* 📊 Performance Score
-* 🚨 Behavioral Alerts
-* 📄 Final Evaluation Report
-
----
-
-## 🎯 Key Features
-
-* Automated AI Interview (NLP)
-* Face Detection & Emotion Analysis
-* Object Detection (Cheating Monitoring)
-* Real-Time Alert System
-* Multi-Modal Decision Engine
-* Admin Dashboard & Reports
+* 📊 Score
+* 🚨 Alerts
+* 📄 Final Report
 
 ---
 
-## 🏗️ Project Structure
+## 🏗️ Project Structure (With Ownership)
 
-```
+```id="projstruct01"
 ai-interview-system/
 │
-├── backend/                     # 🔧 Backend APIs & Core Logic
-│   ├── api-gateway/             # Handles all incoming requests
-│   ├── interview-service/       # NLP interview logic (➡️ AI/NLP Team)
-│   ├── surveillance-service/    # Video stream handling (➡️ CV Team)
-│   ├── behavior-analysis/       # Cheating detection logic (➡️ AI Team)
-│   ├── decision-core/           # Final scoring & decision engine (➡️ Core AI Team)
-│   ├── alert-manager/           # Alert generation system (➡️ Backend Team)
-│   ├── session-manager/         # Interview session handling (➡️ Backend Team)
-│   ├── data-layer/              # Database & storage (➡️ Data Team)
-│   └── common/                  # Shared utilities/config
+├── backend/  
+│   ├── api-gateway/                    # 🔹 Ishan Pankaj Jadhav (Architecture + APIs)
+│   ├── interview-service/              # 🔹 Messiah Prince N, Adityaraj Jadhav (NLP logic)
+│   ├── surveillance-service/           # 🔹 Shambhavi M K, Aditya Gour (Video APIs)
+│   ├── behavior-analysis/              # 🔹 Ganga Siva Prasad (Cheating logic)
+│   ├── decision-core/                  # 🔹 Ishan Pankaj Jadhav (Scoring engine)
+│   ├── alert-manager/                  # 🔹 Aditya Gour (Alert APIs)
+│   ├── session-manager/                # 🔹 Shambhavi M K (Session handling)
+│   ├── data-layer/                     # 🔹 Kodati Ramya Sree, Radhika Gupta (DB & storage)
+│   └── common/
 │
-├── ai-models/                   # 🧠 AI Models
-│   ├── face-detection/          # Face detection model (➡️ CV Team)
-│   ├── emotion-recognition/     # Emotion analysis model (➡️ CV Team)
-│   ├── object-detection/        # Object detection (YOLO) (➡️ CV Team)
-│   ├── nlp-interview/           # NLP/LLM logic (➡️ NLP Team)
-│   └── model-serving/           # Model APIs (➡️ AI Backend Team)
+├── ai-models/  
+│   ├── face-detection/                 # 🔹 Ishan Dudhat, Ganga Siva Prasad
+│   ├── emotion-recognition/            # 🔹 Messiah Prince N, Kaveri Desai
+│   ├── object-detection/               # 🔹 Akshat Rana, Adityaraj Jadhav
+│   ├── nlp-interview/                  # 🔹 Messiah Prince N, Kaveri Desai
+│   └── model-serving/                  # 🔹 Akshat Rana (Model APIs)
 │
-├── frontend/                    # 💻 Frontend Applications
-│   ├── candidate-app/           # Candidate interview UI (➡️ Frontend Team)
-│   ├── admin-dashboard/         # Admin panel & analytics (➡️ Frontend Team)
+├── frontend/  
+│   ├── candidate-app/                  # 🔹 Aditi Yadav, Akshat Rana
+│   ├── admin-dashboard/                # 🔹 Yash Wankhede, Aditi Yadav
 │
-├── realtime-engine/             # ⚡ Real-Time Processing
-│   ├── websocket-server/        # Live communication (➡️ Backend Team)
-│   ├── stream-processor/        # Frame processing pipeline (➡️ CV Team)
+├── realtime-engine/  
+│   ├── websocket-server/               # 🔹 Shambhavi M K
+│   ├── stream-processor/               # 🔹 Ishan Dudhat
 │
-├── infrastructure/              # 🚀 Deployment & DevOps
-│   ├── docker/                  # Docker configs (➡️ DevOps Team)
-│   ├── ci-cd/                   # CI/CD pipelines (➡️ DevOps Team)
+├── infrastructure/  
+│   ├── docker/                         # 🔹 Aditi Yadav
+│   ├── ci-cd/                          # 🔹 Aditi Yadav
 │
-├── docs/                        # 📄 Documentation (➡️ Documentation Team)
-├── tests/                       # 🧪 Testing (➡️ QA Team)
-├── logs/                        # 📜 Logs
+├── docs/                               # 🔹 Radhika Gupta
+├── tests/                              # 🔹 Entire Team
 └── README.md
 ```
 
 ---
 
-## 👨‍💻 Team Responsibilities
+## 👨‍💻 Team Contributions
 
-| Domain        | Responsibility                  |
-| ------------- | ------------------------------- |
-| AI/ML Team    | Models (NLP, CV, scoring)       |
-| Backend Team  | APIs, logic, integration        |
-| Frontend Team | UI (candidate + admin)          |
-| CV Team       | Face, emotion, object detection |
-| DevOps Team   | Deployment, Docker, CI/CD       |
-| Data Team     | DB, analytics, reports          |
+### 👑 Team Lead
+
+* **Ishan Pankaj Jadhav**
+
+  * System architecture
+  * API design
+  * Decision engine
+  * Integration supervision
+
+---
+
+### 🧠 AI / ML Team
+
+* **Messiah Prince N** → NLP + Emotion Detection
+* **Kaveri Ravi Desai** → NLP + Voice Analysis
+* **Akshat Rana** → Object Detection + Model Integration
+* **Adityaraj Jadhav** → AI Support + Alert Intelligence
+* **Ishan Dudhat** → Computer Vision + Streaming
+* **Ganga Siva Prasad** → Behavior Analysis + Gaze Detection
+
+---
+
+### 💻 Backend Team
+
+* **Shambhavi M K** → APIs + WebSockets + Sessions
+* **Aditya Gour** → API Integration + Alerts + Automation
+
+---
+
+### 🎨 Frontend Team
+
+* **Aditi Yadav** → Candidate UI + Admin Panel
+* **Yash Wankhede** → Dashboard + Data Visualization
+
+---
+
+### 📊 Data & Analytics Team
+
+* **Kodati Ramya Sree** → Database + Analytics
+* **Radhika Gupta** → Data Tracking + Documentation
+
+---
+
+### ⚙️ DevOps / Deployment
+
+* **Aditi Yadav** → Docker + CI/CD + Cloud Setup
 
 ---
 
@@ -87,89 +115,83 @@ ai-interview-system/
 
 ### 1. Clone Repository
 
-```bash
+```bash id="clone01"
 git clone https://github.com/YOUR-USERNAME/ai-interview-system.git
 cd ai-interview-system
 ```
 
-### 2. Create Virtual Environment
+### 2. Setup Environment
 
-```bash
+```bash id="env01"
 python -m venv venv
-venv\Scripts\activate   # Windows
-```
-
-### 3. Install Dependencies
-
-```bash
+venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 4. Run Backend
+### 3. Run Backend
 
-```bash
+```bash id="run01"
 uvicorn backend.api-gateway.main:app --reload
 ```
 
 ---
 
-## 🌿 Git Workflow (IMPORTANT)
+## 🌿 Git Workflow
 
-### 🔹 Create Branch
+### Create Branch
 
-```bash
-git checkout -b feature-your-task
+```bash id="branch01"
+git checkout -b feature-task-name
 ```
 
-### 🔹 Commit Changes
+### Commit & Push
 
-```bash
+```bash id="push01"
 git add .
 git commit -m "Added feature"
-git push origin feature-your-task
+git push origin feature-task-name
 ```
 
-### 🔹 Create Pull Request
+### Pull Request
 
-* Go to GitHub
-* Click **Compare & Pull Request**
-* Submit for review
+* Submit PR on GitHub
+* Wait for review (Team Lead)
 
 ---
 
-## 🤝 Contribution Guidelines
+## 🤝 Contribution Rules
 
-### ✅ Rules:
+### ✅ Must Follow:
 
-* Do NOT push directly to `main`
-* Always create a **new branch**
-* Write **clear commit messages**
-* Pull latest code before working:
+* Work only in your assigned module
+* Do NOT push to `main` directly
+* Always create a branch
+* Pull latest changes before starting
 
-```bash
+```bash id="pull01"
 git pull origin main
 ```
 
 ---
 
-### 📌 Task Assignment Rule
+### ❌ Avoid:
 
-* Work ONLY in your assigned folder/module
-* Do NOT modify other modules without permission
-* Follow folder structure strictly
-
----
-
-### 🧪 Testing
-
-* Test your code before pushing
-* Avoid breaking existing functionality
+* Editing other modules without discussion
+* Large unstructured commits
+* Breaking existing code
 
 ---
 
-## 🚀 Deployment (Basic)
+## 🧪 Testing
 
-```bash
+* Each module must be tested before merging
+* Fix bugs before raising PR
+
+---
+
+## 🚀 Deployment
+
+```bash id="deploy01"
 docker-compose build
 docker-compose up
 ```
@@ -178,35 +200,17 @@ docker-compose up
 
 ## 📊 Project Status
 
-🚧 In Development (Phase-wise Execution)
-
----
-
-## 📌 Future Scope
-
-* Voice analysis (stress detection)
-* Eye tracking system
-* Multi-language NLP
-* Cloud-scale deployment
+🚧 Phase-wise Development (1 → 5)
 
 ---
 
 ## 🧠 Final Note
 
-This project follows a **microservices + AI pipeline architecture**, designed for:
+This project follows a **modular AI + microservices architecture**, designed for:
 
 * Scalability
 * Real-time processing
-* Industry-level modular development
+* Industry-level implementation
 
 ---
 
-## 👑 Team Lead
-
-**Ishan Pankaj Jadhav**
-
----
-
-## 📄 License
-
-This project is for academic & research purposes.
